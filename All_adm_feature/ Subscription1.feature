@@ -38,4 +38,4 @@ Feature: Manage subscription plans for clients and instructors
 
     | New User Name | User Email            | New Subscription Plan |
     | Emma Wilson   | emma@example.com      | Premium              |
-    | Noah Davis    | noah.davis@example.com| Basic                |
+    | haya Davis    | noah.davis@example.com| Basic                |
