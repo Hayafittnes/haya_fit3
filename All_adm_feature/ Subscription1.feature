@@ -31,11 +31,11 @@ Feature: Manage subscription plans for clients and instructors
 
   Examples:
     | User Name   | Current Plan | Subscription Plan |
-    | John Doe    | Basic        | Premium           |
-    | Jane Smith  | Premium      | Basic             |
-    | Michael Lee | Basic        | Premium           |
-    | Sarah Miller| Premium      | Basic             |
+    | mohammed khatatbeh    | Basic        | Premium           |
+    | Jane ayman  | Premium      | Basic             |
+    | Masa radi | Basic        | Premium           |
+    | Sarah akram | Premium      | Basic             |
 
     | New User Name | User Email            | New Subscription Plan |
-    | Emma Wilson   | emma@example.com      | Premium              |
-    | haya Davis    | noah.davis@example.com| Basic                |
+    | shahed thaher   | emma@example.com      | Premium              |
+    | haya hadi    | noah.davis@example.com| Basic                |
