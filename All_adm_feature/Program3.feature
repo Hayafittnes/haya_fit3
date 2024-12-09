@@ -14,4 +14,3 @@ Feature: Track active and completed programs
       | Program Status |
       | Active         |
       | Completed      |
-
