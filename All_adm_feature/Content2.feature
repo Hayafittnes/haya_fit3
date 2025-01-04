@@ -1,11 +1,11 @@
 Feature: Approve articles or tips shared on health and wellness
 
   Scenario Outline: Admin approves health and wellness content shared by instructors
-    Given the admin is logged into the system
+    Given the admien is logged into the system
     When the admin navigates to the health and wellness content management section
     And the admin views the article or tip submitted by the instructor "<Instructor Name>"
     And the admin decides to "<Action>" the article or tip titled "<Content Title>"
-    Then the system should update the content status to "<Content Status>"
+    Then the system should update the contents status to "<Content Status>"
     And the system should notify the instructor "<Instructor Name>" about the content status change via email or in-app notification
     And the admin should be able to see a notification confirming the content's status change
 

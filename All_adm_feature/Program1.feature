@@ -10,7 +10,7 @@ Feature: View statistics on the most popular programs by enrollment
     And the list should include the following details for each program:
       | Program Name     | Number of Enrollments | Program Status | Start Date   | End Date     |
     And the programs should be displayed in <order> order of the number of enrollments
-    And if there are more than 10 programs, the system should paginate the list
+    And if there are more than {int} programs, paginate the list
     And the admin should have the option to filter programs by:
       | Enrollment Range | Program Status | Date Range |
 

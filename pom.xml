@@ -3,36 +3,29 @@
   <groupId>Quality.sys</groupId>
   <artifactId>assurance</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
   <dependencies>
-  
-  <dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>7.20.1</version>
-</dependency>
-  
-  <!-- hi every one-->
-  
-  
+    <!-- Cucumber dependencies -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.20.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.20.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+  <artifactId>cucumber-picocontainer</artifactId>
+      <version>7.20.1</version>
+    </dependency>
+
   </dependencies>
-  
-  
-  
-  
-  
-  
-  
-  
-  
 </project>
 
-
-
-
-
-
-
-
-
-
+  

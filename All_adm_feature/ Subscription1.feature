@@ -37,5 +37,5 @@ Feature: Manage subscription plans for clients and instructors
     | Sarah akram | Premium      | Basic             |
 
     | New User Name | User Email            | New Subscription Plan |
-    | shahed thaher   | emma@example.com      | Premium              |
-    | haya hadi    | noah.davis@example.com| Basic                |
+    | shahed thaher   | shahed@example.com      | Premium              |
+    | haya hadi    | haya@example.com| Basic                |

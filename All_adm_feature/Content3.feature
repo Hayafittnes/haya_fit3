@@ -4,7 +4,7 @@ Feature: Handle user feedback and complaints
     Given the admin is logged into the system
     When the admin navigates to the feedback and complaints management section
     And the admin views the feedback or complaint submitted by the user "<User Name>"
-    And the admin decides to "<Action>" the feedback or complaint
+   When the admin decides to "Resolve" the feedback or complaint
     And if the action is "Reject", the admin enters the rejection reason "<Rejection Reason>"
     Then the system should update the status of the feedback or complaint to "<Feedback Status>"
     And the system should notify the user "<User Name>" about the resolution via email or in-app notification
@@ -12,9 +12,9 @@ Feature: Handle user feedback and complaints
 
     Examples:
       | Action   | User Name      | Feedback Status | Rejection Reason                    |
-      | Resolve  | John Doe       | Resolved        |                                      |
-      | Reject   | Jane Smith     | Rejected        | Insufficient information provided   |
-      | Resolve  | Michael Lee    | Resolved        |                                      |
-      | Reject   | Sarah Miller   | Rejected        | Issue is outside the scope of services |
+      | Resolve  | haya naaem      | Resolved        |                                      |
+      | Reject   | yazan taleb    | Rejected        | Insufficient information provided   |
+      | Resolve  | hadi belal    | Resolved        |                                      |
+      | Reject   | Sarah mosah  | Rejected        | Issue is outside the scope of services |
 
 
