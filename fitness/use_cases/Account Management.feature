@@ -29,14 +29,14 @@ Feature: Account Management
       | Gluten-free          |
       | No dairy             |
 
-  Scenario: View the user's profile
-  Given I have an existing user profile
+  Scenario Outline: View the user's profile
+  Given I have an existing user profile with ID <userId> and age <age> and "<fitnessGoals>" and "<dietaryPreferences>"
   When I view my profile
   Then I should see my personal details: my age <age>  , my fitness goals "<fitnessGoals>"
   And I should see my dietary preferences "<dietaryPreferences>" 
 
 Examples:
-  | age | fitnessGoals        | dietaryPreferences |
-  | 30  | Lose weight         | Vegan              |
-  | 25  | Build muscle        | Gluten-free        |
-  | 40  | Improve endurance   | No dairy           |
+  | userId | age | fitnessGoals        | dietaryPreferences |
+  | 1      | 30  | Lose weight         | Vegan              |
+  | 2      | 25  | Build muscle        | Gluten-free        |
+  | 3      | 40  | Improve endurance   | No dairy           |
