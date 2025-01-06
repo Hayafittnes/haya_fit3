@@ -1,4 +1,4 @@
-package fitness;
+package assurance;
 
 import org.junit.Assert;
 import org.mockito.Mockito;

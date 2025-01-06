@@ -1,4 +1,4 @@
-package fitness;
+package assurance;
 import static org.mockito.Mockito.*;
 
 import org.mockito.Mockito;

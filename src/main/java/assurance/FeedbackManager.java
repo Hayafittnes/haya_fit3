@@ -1,4 +1,4 @@
-package fitness;
+package assurance;
 
 import java.util.HashMap;
 import java.util.Map;

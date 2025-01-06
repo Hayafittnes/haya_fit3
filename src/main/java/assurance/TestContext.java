@@ -1,4 +1,4 @@
-package fitness;
+package assurance;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
