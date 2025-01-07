@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>Quality.sys</groupId>
   <artifactId>assurance</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -19,48 +20,27 @@
       <scope>test</scope>
     </dependency>
 
-<dependency>
-    <groupId>org.mockito</groupId>
-    <artifactId>mockito-core</artifactId>
-    <version>5.14.2</version>
-    <scope>test</scope>
-</dependency>
-
-<dependency>
-    <groupId>org.mockito</groupId>
-    <artifactId>mockito-core</artifactId>
-    <version>5.14.2</version>
-    <scope>org.mockito:mockito-core:5.14.2</scope>
-</dependency>
+    <!-- Mockito dependencies -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>5.14.2</version>
+      <scope>test</scope>
+    </dependency>
 
     <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>5.14.2</version>
+      <scope>org.mockito:mockito-core:5.14.2</scope>
+    </dependency>
+
+    <!-- Cucumber Picocontainer dependency -->
+    <dependency>
       <groupId>io.cucumber</groupId>
-  <artifactId>cucumber-picocontainer</artifactId>
+      <artifactId>cucumber-picocontainer</artifactId>
       <version>7.20.1</version>
     </dependency>
-<properties>
-  <sonar.organization>hayafittnes</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
-  </dependencies>
-  <project>
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <!-- select non-aggregate reports -->
-              <report>report</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-    </plugins>
-  </reporting>
-</project>
-</project>
 
-  
+  </dependencies>
+</project>
