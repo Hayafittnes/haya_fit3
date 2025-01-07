@@ -12,42 +12,37 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class achievementtest {
-	private UserAchiv user = new UserAchiv("John Doe");  // A user object that holds the state
-    private AchievementsService achievementsService = new AchievementsService();  // Service to manage achievements
+	private UserAchiv user = new UserAchiv("John Doe"); 
+    private AchievementsService achievementsService = new AchievementsService(); 
 	@Given("I have completed the program {string}")
 	public void i_have_completed_the_program(String string) {
-		// Simulate completion of the program for the user
         user.completeProgram(string);
 	}
 
 	@When("I view my achievements")
 	public void i_view_my_achievements() {
-		// View the achievements of the user
         achievementsService.viewAchievements(user);
 	}
 
 	@Then("I should see a badge titled {string}")
 	public void i_should_see_a_badge_titled(String string) {
-		// Get the first program completed by the user for testing
-	    String program = user.getCompletedPrograms().get(0); // Assuming at least one program is completed
-	    String actualBadgeTitle = achievementsService.getBadgeTitle(user, program);
+	    String program = user.getCompletedPrograms().get(0); 
+	    String actualBadgeTitle = achievementsService.getBadgeTitle(program);
 	    Assert.assertEquals("Badge title does not match", string, actualBadgeTitle);
 	}
 
 	@Then("the description should be {string}")
 	public void the_description_should_be(String string) {
-	    // Get the first program completed by the user for testing
-	    String program = user.getCompletedPrograms().get(0); // Assuming at least one program is completed
-	    String actualBadgeDescription = achievementsService.getBadgeDescription(user, program);
+	    String program = user.getCompletedPrograms().get(0); 
+	    String actualBadgeDescription = achievementsService.getBadgeDescription(program);
 	    Assert.assertEquals("Badge description does not match", string, actualBadgeDescription);
 	}
 
 	@Given("I have completed the programs {string}")
 	public void i_have_completed_the_programs(String string) {
-		 // Split the string of programs and complete each one
         String[] programList = string.split(",");
         for (String program : programList) {
-            user.completeProgram(program.trim());  // Make sure to trim spaces
+            user.completeProgram(program.trim()); 
         }
 	}
 
