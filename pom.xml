@@ -16,6 +16,7 @@
   </properties>
   
   <dependencies>
+    <!-- Mockito dependency -->
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
@@ -23,13 +24,28 @@
       <scope>test</scope>
     </dependency>
 
-  <dependency>
+    <!-- Duplicate Mockito dependency -->
+    <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <version>5.14.2</version>
       <scope>org.mockito:mockito-core:5.14.2</scope>
-      </dependency>
-      
+    </dependency>
+
+    <!-- JUnit dependency -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.7.2</version> <!-- Use the appropriate version -->
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.7.2</version> <!-- Use the appropriate version -->
+      <scope>test</scope>
+    </dependency>
+
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
@@ -41,12 +57,12 @@
       <version>7.20.1</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
-          <groupId>io.cucumber</groupId>
-          <artifactId>cucumber-picocontainer</artifactId>
-          <version>7.18.0</version>
-          <scope>test</scope>
-      </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-picocontainer</artifactId>
+      <version>7.18.0</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-core</artifactId>
@@ -54,17 +70,17 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-	  <groupId>io.cucumber</groupId>
-	  <artifactId>cucumber-junit-platform-engine</artifactId>
-	  <version>7.20.1</version>
-	  <scope>test</scope>
-	</dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit-platform-engine</artifactId>
+      <version>7.20.1</version>
+      <scope>test</scope>
+    </dependency>
 
     <dependency>
-	    <groupId>com.fasterxml.jackson.core</groupId>
-	    <artifactId>jackson-databind</artifactId>
-	    <version>2.13.3</version>
-	</dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.13.3</version>
+    </dependency>
   </dependencies>
   
   <build>
@@ -89,4 +105,4 @@
         </plugin>
     </plugins>
   </build>
-  </project>
+</project>
