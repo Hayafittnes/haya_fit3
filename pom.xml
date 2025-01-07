@@ -38,8 +38,29 @@
   <artifactId>cucumber-picocontainer</artifactId>
       <version>7.20.1</version>
     </dependency>
-
+<properties>
+  <sonar.organization>hayafittnes</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
   </dependencies>
+  <project>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <!-- select non-aggregate reports -->
+              <report>report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>
 </project>
 
   
