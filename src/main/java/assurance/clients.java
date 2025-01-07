@@ -1,20 +1,34 @@
 package assurance;
 
 public class clients {
+    private int id;
     private String name;
     private String email;
     private String password;
+    private int age;
+    private String dietaryPreferences;
+    private String fitnessGoals;
     private int loginCount;
     private int completedWorkouts;
-    private int programsEnrolled; 
-    public clients(String name, String email, String password) {
+    private int programsEnrolled;
+
+    public clients(int id, String name, String email, String password, int age, String dietaryPreferences, String fitnessGoals) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.loginCount = 0; 
-        this.completedWorkouts = 0; 
-        this.programsEnrolled = 0; 
+        this.age = age;
+        this.dietaryPreferences = dietaryPreferences;
+        this.fitnessGoals = fitnessGoals;
+        this.loginCount = 0;
+        this.completedWorkouts = 0;
+        this.programsEnrolled = 0;
     }
+
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -25,6 +39,18 @@ public class clients {
 
     public String getPassword() {
         return password;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getDietaryPreferences() {
+        return dietaryPreferences;
+    }
+
+    public String getFitnessGoals() {
+        return fitnessGoals;
     }
 
     public int getLoginCount() {
@@ -38,6 +64,10 @@ public class clients {
     public int getProgramsEnrolled() {
         return programsEnrolled;
     }
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -48,6 +78,18 @@ public class clients {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setDietaryPreferences(String dietaryPreferences) {
+        this.dietaryPreferences = dietaryPreferences;
+    }
+
+    public void setFitnessGoals(String fitnessGoals) {
+        this.fitnessGoals = fitnessGoals;
     }
 
     public void setLoginCount(int loginCount) {
@@ -61,8 +103,6 @@ public class clients {
     public void setProgramsEnrolled(int programsEnrolled) {
         this.programsEnrolled = programsEnrolled;
     }
-
-    // Increment methods
     public void incrementLoginCount() {
         this.loginCount++;
     }
@@ -77,8 +117,9 @@ public class clients {
 
     @Override
     public String toString() {
-        return "Client [name=" + name + ", email=" + email + ", loginCount=" + loginCount + 
-               ", completedWorkouts=" + completedWorkouts + ", programsEnrolled=" + programsEnrolled + "]";
+        return "Client [id=" + id + ", name=" + name + ", email=" + email + ", age=" + age + 
+               ", dietaryPreferences=" + dietaryPreferences + ", fitnessGoals=" + fitnessGoals + 
+               ", loginCount=" + loginCount + ", completedWorkouts=" + completedWorkouts + 
+               ", programsEnrolled=" + programsEnrolled + "]";
     }
 }
-

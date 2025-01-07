@@ -267,7 +267,7 @@ public class AdminService {
         if (clientMap.containsKey(clientEmail)) {
             throw new IllegalArgumentException("Client already registered.");
         }
-        clientMap.put(clientEmail, new clients(clientEmail, clientEmail, clientEmail));
+        clientMap.put(clientEmail, new clients(0, clientEmail, clientEmail, clientEmail, 0, clientEmail, clientEmail));
         System.out.println("Client account added: " + clientEmail);
     }
 

@@ -59,7 +59,7 @@ public class UserService {
         if (name == null || email == null || password == null) {
             throw new IllegalArgumentException("Client details cannot be null.");
         }
-        clients client = new clients(name, email, password);  // Corrected class name to Client
+        clients client = new clients(0, name, email, password, 0, password, password);  
         clients.put(email, client);
         System.out.println("Client added: " + name + " (" + email + ")");
     }

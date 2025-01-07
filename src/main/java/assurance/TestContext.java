@@ -6,18 +6,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TestContext {
-    private static user currentUser;
+    private static clients currentUser;
     private static Map<String, Object> contextData = new HashMap<>(); // Map for storing key-value pairs
 
     // Method to get the current user
-    public static user getUser() {
+    public static clients getUser() {
         return currentUser;
     }
 
     // Method to set the current user
-    public static void setUser(user user) {
+    public static void setUser(clients mockUser) {
     	
-        TestContext.currentUser = user;
+        TestContext.currentUser = mockUser;
     }
 
     // Method to set key-value pairs in the context

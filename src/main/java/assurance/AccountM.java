@@ -1,16 +1,26 @@
 package assurance;
-import static org.mockito.Mockito.*;
 
 import org.mockito.Mockito;
+
 public class AccountM {
-	  // Helper method to create a mock user
-	public static user createMockUser(int id, String name, int age, String fitnessGoals, String dietaryPreferences) {
-            user mockUser = Mockito.mock(user.class);
-            Mockito.when(mockUser.getId()).thenReturn(id);
-            Mockito.when(mockUser.getName()).thenReturn(name);
-            Mockito.when(mockUser.getAge()).thenReturn(age);
-            Mockito.when(mockUser.getFitnessGoals()).thenReturn(fitnessGoals);
-            Mockito.when(mockUser.getDietaryPreferences()).thenReturn(dietaryPreferences);
-            return mockUser;
-}
+
+    private AccountM() {}
+    private static AccountM instance;
+
+    public static AccountM getInstance() {
+        if (instance == null) {
+            instance = new AccountM();
+        }
+        return instance;
+    }
+
+    public static clients createMockClient(int id, String name, int age, String fitnessGoals, String dietaryPreferences) {
+        clients mockClient = Mockito.mock(clients.class);
+        Mockito.when(mockClient.getId()).thenReturn(id);
+        Mockito.when(mockClient.getName()).thenReturn(name);
+        Mockito.when(mockClient.getAge()).thenReturn(age);
+        Mockito.when(mockClient.getFitnessGoals()).thenReturn(fitnessGoals);
+        Mockito.when(mockClient.getDietaryPreferences()).thenReturn(dietaryPreferences);
+        return mockClient;
+    }
 }
