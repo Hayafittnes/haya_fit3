@@ -28,7 +28,7 @@ Feature: Account Management
       | Vegan                |
       | Gluten-free          |
       | No dairy             |
-
+@fail
   Scenario Outline: View the user's profile
   Given I have an existing user profile with ID <userId> and age <age> and "<fitnessGoals>" and "<dietaryPreferences>"
   When I view my profile

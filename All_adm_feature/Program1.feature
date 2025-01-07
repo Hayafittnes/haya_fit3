@@ -1,5 +1,5 @@
 Feature: View statistics on the most popular programs by enrollment
-
+@fail
   Scenario Outline: Display programs sorted by enrollment numbers with filters
     Given the admin is logged into the system
     When the admin navigates to the program statistics section

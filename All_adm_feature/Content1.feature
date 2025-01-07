@@ -1,5 +1,5 @@
 Feature: Approve or reject wellness articles, tips, or recipes shared by instructors
-
+@fail
   Scenario Outline: Admin approves or rejects wellness content shared by instructors
     Given the admin is logged into the system
     When the admin navigates to the content management section

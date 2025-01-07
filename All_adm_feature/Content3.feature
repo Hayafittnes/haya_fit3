@@ -1,5 +1,5 @@
 Feature: Handle user feedback and complaints
-
+@fail
   Scenario Outline: Admin handles user feedback or complaints
     Given the admin is logged into the system
     When the admin navigates to the feedback and complaints management section

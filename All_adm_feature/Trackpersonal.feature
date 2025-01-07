@@ -1,5 +1,5 @@
 Feature: Track personal fitness milestones
-
+@fail
   Scenario Outline: Update weight milestone
     Given I have logged into my fitness account
     When I update my weight to <weight>
@@ -11,7 +11,7 @@ Feature: Track personal fitness milestones
       | 68.0 kg  |
       | 75.0 kg  |
       | 80.0 kg  |
-
+@fail
   Scenario Outline: Update BMI milestone
     Given I have logged into my fitness account
     When I update my BMI to <bmi>

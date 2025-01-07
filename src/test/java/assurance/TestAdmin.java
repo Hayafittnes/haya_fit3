@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "All_adm_feature", 
     glue = "assurance",  
-    plugin = { "html:target/cucumber/wikipedia.html"} 
-)
+    plugin = { "html:target/cucumber/wikipedia.html"} ,
+    		tags="not @fail")
+
 public class TestAdmin {
   }

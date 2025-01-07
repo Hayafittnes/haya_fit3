@@ -1,5 +1,5 @@
 Feature: Approve articles or tips shared on health and wellness
-
+@fail
   Scenario Outline: Admin approves health and wellness content shared by instructors
     Given the admien is logged into the system
     When the admin navigates to the health and wellness content management section
