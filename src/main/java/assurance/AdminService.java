@@ -306,5 +306,6 @@ public class AdminService {
 	    public void addContent(Content content) {
 	        contentDatabase.put(content.getTitle(), content);
 	    }
+	   
 
 }
